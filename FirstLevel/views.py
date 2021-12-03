@@ -41,6 +41,9 @@ def strength(request):
 def whatwedo(request):
     return render(request, 'FirstLevel/whatwedo.html')
 
+def directors(request):
+    return render(request, 'FirstLevel/directors.html')
+
 # After Login- Logout redirect page
 def user_logout(request):
     logout(request)

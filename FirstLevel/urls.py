@@ -17,6 +17,7 @@ urlpatterns = [
     path('principle/', views.principle, name='principle'),
     path('whatwedo/', views.whatwedo, name='whatwedo'),
     path('strength/', views.strength, name='strength'),
+    path('directors/', views.directors, name='directors'),
     # path('L_T_MIS/', views.L_T_MIS, name='L_T_MIS'),
     # path('L_T_BILLING/', views.L_T_BILLING, name='L_T_BILLING'),
     # path('L_T_SALARY/', views.MASTER_SALARY_TW, name='L_T_TW'),
