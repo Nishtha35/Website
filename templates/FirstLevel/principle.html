@@ -5,110 +5,59 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="{% static 'FirstLevel/principles.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'FirstLevel/css/principle.css' %}">
     <title></title>
-    <style>
-        @font-face {
-            font-family: Accidental Presidency ;
-            src: url("{% static 'FirstLevel/fonts/accid_.ttf' %}");
-            }
-
-        @font-face {
-            font-family: Arial Narrow;
-            src: url("{% static 'FirstLevel/fonts/ARIALNB_2.ttf' %}");
-            }
-
-        body{
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: 50% 50% ;
-            background-size: 500px 550px;
-            background-color: black;
-            }
-
-        h1{
-            color: white;
-            font-family: Accidental Presidency;
-            font-size: 36px;
-            text-align: left;
-            margin-bottom: 0px;
-            }
-
-        ol.breadcrumb{
-            padding: 10px 16px;
-            list-style: none;
-            background-color:none;
-            text-align: left;
-            }
-
-        ol.breadcrumb li{
-            display: inline;
-            font-size: 18px;
-            }
-
-        ol.breadcrumb li+li:before{
-            padding: 8px;
-            color: rgba(211,174,109,255);
-            content: "/\00a0";
-            }
-
-        ol.breadcrumb li a{
-            color: white ;
-            text-decoration: none;
-            }
-
-        ol.breadcrumb li a:hover {
-            color: white;
-            text-decoration: underline;
-            }
-    </style>
 </head>
 <body>
-  <h1 style="margin-bottom:0px;margin-top:0px;border-left-style:solid;border-left-width:0px; margin-left:110px; color:white">OUR PRINCIPLES</h1>
-  <hr color="#d3ae6d" style="margin-left:115px; margin-right:50px;">
+  <h1 style="margin-bottom:0px;margin-top:100px;border-left-style:solid;border-left-width:0px; margin-left:110px; color:white">OUR PRINCIPLES</h1>
+    <hr color="#d3ae6d" style="margin-left:115px; margin-right:140px;">
   <ol class="breadcrumb" style="width:400px;padding-bottom:10px;padding-left:20px;padding-top:0px;margin-top:0px;">
-    <li><a href="{% url 'basic_app:index' %}" style="padding-left:95px;">Home</a></li>
+    <li><a href="{% url 'basic_app:index' %}">Home</a></li>
     <li><a href="{% url 'basic_app:principle' %}">Our Principles</a></li>
   </ol>
 
-  <div class="table1">
-    <table>
-      <tr>
-        <th><img src="{% static 'FirstLevel/images/principles1.png' %}" width="300" height="150" style = "margin-left: 25px;margin-right: 25px; padding-left: 50px; padding-right: 50px" ></th>
-        <th><HR COLOR= "grey" WIDTH= "100%" SIZE= "150 PIXEL"></th>
-        <th style="padding-bottom: 33px; padding-left:37px; color: white">Ethical working and transparency in dealing</th>
-      </tr>
-    </table>
+  <div class="row1">
+      <div class="course-col">
+        <table>
+          <tr>
+            <th><img src="{% static 'FirstLevel/images/principles1.png' %}" style="padding-top: 45px;padding-left: 20px; padding-right: 20px; margin-right: 10px; margin-right: 20px; "></th>
+            <th><HR COLOR= "grey" WIDTH= "100%" SIZE= "150 PIXEL" style="margin-bottom:22px; margin-top:20px;"></th>
+            <th style="padding-bottom: 50px; padding-left:27px; padding-right: 20px;"><br>Ethical working and transparency in dealing</th>
+          </tr>
+        </table>
+      </div>
+      <div class="course-col">
+        <table>
+          <tr>
+            <th><img src="{% static 'FirstLevel/images/Principles2.png' %}" style="padding-left: 20px;padding-right: 10px;padding-top: 32px;margin-left: 10px; margin-right: 30px; "></th>
+            <th><HR COLOR= "GREY" WIDTH= "100%" SIZE= "150 PIXEL" style="margin-bottom:22px; margin-top: 20px;" ></th>
+            <th style="padding-bottom: 50px;  padding-left:27px; padding-right: 20px;"><br>Dedication and delivery orientation</th>
+          </tr>
+        </table>
+      </div>
   </div>
-  <br>
-  <div class="table2">
-    <table>
-      <tr>
-        <th><img src="{% static 'FirstLevel/images/Principles2.png' %} " width="200" height="200" style="margin-left: 90px;margin-right: 60px; padding-top: 25px; padding-bottom: 25px; padding-left: 25px; padding-right: 25px; "></th>
-        <th><HR COLOR= "GREY" WIDTH= "100%" SIZE= "150 PIXEL"></th>
-        <th style="padding-bottom: 33px;  padding-left:37px; color: white ">Dedication and delivery orientation</th>
-      </tr>
-    </table>
-  </div>
-<br>
-  <div class="table3">
-    <table>
-      <tr>
-        <th><img src="{% static 'FirstLevel/images/principles3.png' %}" width="300" height="150" style="margin-right: 30px; margin-left: 20px; padding-left: 50px; padding-right: 50px"></th>
-        <th><HR COLOR= "GREY" WIDTH= "50%" SIZE= "150 PIXEL"></th>
-        <th style="padding-bottom: 33px;  padding-left:37px; color: white">Service before self interest</th>
-      </tr>
-    </table>
-  </div>
-<br>
-  <div class="table4">
-    <table>
-      <tr>
-        <th><img src="{% static 'FirstLevel/images/principles4.png' %}" width="300" height="150" style="margin-left: 25px;margin-right: 25px; padding-left: 50px; padding-right: 50px;"></th>
-        <th><HR COLOR= "GREY" WIDTH= "50%" SIZE= "150 PIXEL"></th>
-        <th style="padding-bottom: 33px; padding-left:37px; color: white ">Building extensive and exhaustive brand partnerships</th>
-      </tr>
-    </table>
+
+  <div class="row2">
+      <div class="course-col">
+        <table>
+          <tr>
+            <th><img src="{% static 'FirstLevel/images/principles3.png' %}" style="padding-left: 20px;padding-right: 10px;padding-top: 32px;margin-left: 10px; margin-right: 20px; "></th>
+            <th><HR COLOR= "GREY" WIDTH= "50%" SIZE= "150 PIXEL" style="margin-bottom:22px; margin-top: 20px;"></th>
+            <th style="padding-bottom: 50px;  padding-left:27px; padding-right: 20px;"><br>Service before self interest</th>
+          </tr>
+        </table>
+      </div>
+
+      <div class="course-col">
+        <table>
+          <tr>
+            <th><img src="{% static 'FirstLevel/images/principles4.png' %}" style="padding-left: 20px;padding-right: 10px;padding-top: 32px;margin-left: 10px; margin-right: 20px; "></th>
+            <th><HR COLOR= "GREY" WIDTH= "50%" SIZE= "150 PIXEL" style="margin-bottom:22px; margin-top: 20px;"></th>
+            <th style="padding-bottom: 50px; padding-left:27px; padding-right: 20px; "><br>Building extensive and exhaustive brand partnerships</th>
+          </tr>
+        </table>
+      </div>
   </div>
 </body>
 </html>
