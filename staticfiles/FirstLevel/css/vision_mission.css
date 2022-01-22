@@ -97,7 +97,7 @@
 
 
     .table2{
-     margin-top: 108px;
+      margin-top: 108px;
     /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
      /* background-color:rgb(211 ,174 ,109) ; */
      color: white;
@@ -109,7 +109,7 @@
      font-size: 19px;
      float:right;
      animation: slideMe2 4s ease-in;
-     
+
     }
 
     @keyframes slideMe2 {
@@ -161,7 +161,7 @@
        border-radius: 116px;
        width:654px;
        height:182px;
-       animation: mymove1 2s  ease-in;
+        animation: mymove1 2s  ease-in;
 
        /* vertical-align: middle; */
        font-size: 19px;
