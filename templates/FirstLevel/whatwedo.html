@@ -71,43 +71,45 @@
     </style>
 </head>
 <body>
-  <section class="service">
-    <h1 style="margin-bottom:0px; margin-top:100px; border-left-style:solid;border-left-width:0px; margin-left:110px; color:white">WHAT WE DO</h1>
-    <hr color="#d3ae6d" style="margin-left:115px; margin-right:50px;">
-    <ol class="breadcrumb" style="width:400px;padding-bottom:10px;padding-left:20px;padding-top:0px;margin-top:0px;">
+  <section class="service" >
+    <h1 style="margin-bottom:0px;margin-top:52px;border-left-style:solid;border-left-width:0px; margin-left:-36px; color:white">WHAT WE DO</h1>
+    <hr color="#d3ae6d" style="margin-left:-36px; margin-right:0px;">
+    <!-- <h1 style="margin-bottom:0px; margin-top:52px; border-left-style:solid;border-left-width:0px; margin-left:110px; color:white">WHAT WE DO</h1>
+    <hr color="#d3ae6d" style="margin-left:115px; margin-right:50px;"> -->
+    <ol class="breadcrumb" style="width:400px;padding-bottom:10px;padding-left:0px;padding-top:0px;margin-top:0px; margin-left: -36px;">
       <li>
-        <a href="{% url 'basic_app:index' %}" style="padding-left:75px;" >Home</a>
+        <a href="{% url 'basic_app:index' %}" style="padding-left:-36px;" >Home</a>
       </li>
       <li>
-        <a href="{% url 'basic_app:whatwedo' %}">What We Do</a>
+        <a href="{% url 'basic_app:whatwedo' %}" >What We Do</a>
       </li>
     </ol>
     
       <div class="row">
-        <!-- <DIV class="service-col"> -->
-          <img class="img1" src="{% static 'FirstLevel/images/Picture1.png' %}" alt="">
-        <!-- </DIV> -->
+        <DIV class="service-col">
+          <img class="img1" src="{% static 'FirstLevel/images/Picture1.png' %}" alt="" style="width:200px;">
+        </DIV>
         
-        <!-- <DIV class="service-col">   -->
-          <img class="img2" src="{% static 'FirstLevel/images/Picture2.png' %}" alt="">
-        <!-- </DIV>   -->
+        <DIV class="service-col">  
+          <img class="img2" src="{% static 'FirstLevel/images/Picture2.png' %}" alt="" style="width:200px;">
+        </DIV>  
       </div>
 
       <div class="row2">
         
-        <!-- <DIV class="service-col"> -->
-          <img class="img3" src="{% static 'FirstLevel/images/Picture3.png' %}" alt="">
-        <!-- </DIV> -->
+        <DIV class="service-col">
+          <img class="img3" src="{% static 'FirstLevel/images/Picture5.png' %}" alt="" style="width:240px;">
+        </DIV>
         
       </div>
 
       <div class="row3">
-        <!-- <DIV class="service-col"> -->
-          <img class="img4" src="{% static 'FirstLevel/images/Picture4.png' %}" alt="">
-        <!-- </DIV> -->
-        <!-- <DIV class="service-col"> -->
-          <img class="img5" src="{% static 'FirstLevel/images/Picture5.png' %}" alt="">
-        <!-- </DIV>   -->
+        <DIV class="service-col">
+          <img class="img4" src="{% static 'FirstLevel/images/Picture3.png' %}" alt="" style="width:200px;">
+        </DIV>
+        <DIV class="service-col">
+          <img class="img5" src="{% static 'FirstLevel/images/Picture4.png' %}" alt="" style="width:133px;">
+        </DIV>  
       </div>
   </section>
 </body>

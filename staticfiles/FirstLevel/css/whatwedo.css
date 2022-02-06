@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: Accidental Presidency ;
   src: url("{% static 'FirstLevel/fonts/accid_.ttf' %}");
   }
@@ -39,7 +39,7 @@ img{
   
 .img3{
       margin-top: -3%;
-      margin-left: 41%;
+      margin-left: 102%;
       margin-right: 34%;
       width:262px;
       height:146px;
@@ -59,14 +59,15 @@ img{
       padding-top: 120px;
       padding-left: 63px;
       width:656px;
-  }
+      margin-left: -190px;
+  } */
 
-@media screen and (max-width : 979px){
+/* @media screen and (max-width : 980px){
   .img{
     width: 50%;
   }
-  
-}
+ 
+} */
 
 
 /* .service{
@@ -74,9 +75,9 @@ width:80%;
 margin:auto;
 text-align:center;
 padding-top:50px;
-} */
+} 
 
-/*
+
 .row{
 margin-top:5%;
 display:flex;
@@ -122,4 +123,167 @@ flex-direction: row;
 .row,.row2, .row3{
   flex-direction: column;
 }
-}  */
+}   */
+
+/* ------------------------------------ */
+
+
+/* 
+@media(max-width: 534px){
+  .img1{
+      max-width: 247px;
+      margin-left: 200px;
+      padding-top: 23px;
+  }
+  
+  .img5{
+      padding-top: 85px;
+      margin-left: 125px;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: Accidental Presidency ;
+  src: url("{% static 'FirstLevel/fonts/accid_.ttf' %}");
+  }
+
+@font-face {
+  font-family: Arial Narrow;
+  src: url("{% static 'FirstLevel/fonts/ARIALNB_2.ttf' %}");
+  }
+
+body{
+  background-color: black;
+  background-image: url("{% static 'FirstLevel/images/4ps.png' %}");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 57% ;
+  background-size: 500px 450px;
+  overflow:scroll;
+  }
+   ::-webkit-scrollbar {
+    width: 0px;}
+
+.service{
+width:80%;
+margin:auto;
+text-align:center;
+padding-top:50px;
+/* margin-left: 110px; */
+}
+
+h1{
+font-size: 36px;
+font-weight: 600;
+font-family: Accidental Presidency;
+color: white;
+text-align: left;
+}
+
+ol.breadcrumb{
+padding: 10px 16px;
+list-style: none;
+background-color:none;
+text-align: left;
+}
+
+ol.breadcrumb li{
+display: inline;
+font-size: 18px;
+}
+
+ol.breadcrumb li+li:before{
+padding: 8px;
+color: rgba(211,174,109,255);
+content: "/\00a0";
+}
+
+ol.breadcrumb li a{
+color: white;
+text-decoration: none;
+}
+
+ol.breadcrumb li a:hover{
+color: white;
+text-decoration: underline;
+}
+
+p{
+color:#777;
+font-size: 18px;
+font-weight: 300;
+line-height: 22px;
+padding:10px;
+}
+
+.row{
+margin-top:5%;
+display:flex;
+justify-content: space-between;
+flex-direction: row;
+
+}
+/* .row3{
+  margin-top:5%;
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+  
+  } */
+.service-col{
+flex-basis:30%;
+background:black;
+border-radius: 48px;
+margin-bottom:5%;
+padding:12px 0px;
+box-sizing: border-box;
+margin-top: -25px;
+}
+
+  
+h3{
+text-align: center;
+font-weight: 600;
+font-family: sans-serif;
+margin:0px 0px;
+text-decoration:underline;
+text-decoration-color:#d3ae6d;
+margin-bottom:5px;
+}
+
+
+.row2{
+margin-top:2%;
+display:flex;
+justify-content:space-around;
+width:100%;
+margin:auto;
+text-align:center;
+padding-top:50px;
+flex-direction: row;
+}
+.row3{
+  margin-top:2%;
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  margin:auto;
+  text-align:center;
+  padding-top:50px;
+  flex-direction: row;
+
+}
+
+@media (max-width:746px) {
+.row,.row2,.row3{
+  flex-direction: column;
+}
